@@ -37,7 +37,7 @@ body {
 }
 
 .gameContainer {
-  background-image: url("../assets/background.jpg");
+  background-image: url("https://github.com/iamvishalaggarwal/tom-and-jerry-playground/blob/main/assets/background.jpg?raw=true");
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   width: 100vw;
@@ -50,7 +50,7 @@ body {
   top: 63px;
   font-size: 80px;
   text-align: center;
-  color: #FFFF;
+  color: #ffff;
   letter-spacing: 3px;
 }
 
@@ -65,13 +65,13 @@ body {
 
 .replay a {
   background-color: #7f7fff;
-    border: 2px solid #7f7fff;
-    border-radius: 50px;
-    color: white;
-    font-size: 25px;
-    padding: 15px 25px;
-    animation: flash;
-    animation-duration: 2s;
+  border: 2px solid #7f7fff;
+  border-radius: 50px;
+  color: white;
+  font-size: 25px;
+  padding: 15px 25px;
+  animation: flash;
+  animation-duration: 2s;
 }
 
 .replay a:hover {
@@ -86,7 +86,7 @@ body {
 }
 
 .player {
-  background-image: url("../assets/jerry.png");
+  background-image: url("https://github.com/iamvishalaggarwal/tom-and-jerry-playground/blob/main/assets/jerry.png?raw=true");
   background-repeat: no-repeat;
   background-size: cover;
   width: 205px;
@@ -119,7 +119,7 @@ body {
   }
 }
 .obstacle {
-  background-image: url("../assets/tom_img.png");
+  background-image: url(https://github.com/iamvishalaggarwal/tom-and-jerry-playground/blob/main/assets/tom_img.png?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   width: 250px;
