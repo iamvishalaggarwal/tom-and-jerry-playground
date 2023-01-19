@@ -47,7 +47,7 @@ const startTheGame = () => {
           playerXAxis < minWidthOfWindow ? playerXAxis + 112 + "px" : "35px";
       }
     } else {
-      window.location.replace("/");
+      window.location.replace("/tom-and-jerry-playground");
     }
   };
 
@@ -85,7 +85,7 @@ const startTheGame = () => {
 
       // for adding replay link tag (button)
       var replayTag = document.createElement("a");
-      replayTag.setAttribute("href", "/");
+      replayTag.setAttribute("href", "/tom-and-jerry-playground");
       replayTag.innerText = "Play Again :)";
       replay.appendChild(replayTag);
 
