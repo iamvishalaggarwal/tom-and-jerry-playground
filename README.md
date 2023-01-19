@@ -24,6 +24,10 @@ The HTML file adds structure to the game followed by styling using CSS. JavaScri
 - Collision logic
 - Responsive UI/UX design
 
+## Example Preview or Demo
+
+![Background](https://github.com/iamvishalaggarwal/tom-and-jerry-playground/blob/main/assets/UIDesign.png?raw=true)
+
 ## Tech Stack
 
 **Technology Used :** Javascript, HTML, CSS
