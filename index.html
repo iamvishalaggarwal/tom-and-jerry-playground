@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- animate.style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- JS -->
+    <script src="./script.js"></script>
+    <title>Tom & Jerry Playground</title>
+  </head>
+  <body onmousedown="return false" onselectstart="return false">
+    <header class="header-style">
+      <a href="/" class="logo-text">Tom & Jerry Playground</a>
+      <div class="scoreCount">
+        <span>Score : </span><span class="win">0</span>
+      </div>
+    </header>
+    <div class="gameContainer">
+      <div class="playGame gameStartDiv">
+        <span id="text">Let's Start</span>
+        <button class="gameStart" onclick="startTheGame()">PLAY</button>
+      </div>
+      <div class="gameOver"></div>
+      <div class="replay"></div>
+      <div class="player"></div>
+      <div class="obstacle"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@200;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: skyblue;
+  overflow: hidden;
+}
+
+.header-style {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  height: 6vh;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  color: white;
+  background: #7f7fff;
+  font-weight: 500;
+}
+.logo-text {
+  margin-left: 5rem;
+}
+
+.scoreCount {
+  font-size: 30px;
+  color: white;
+  margin-right: 5rem;
+  padding: 10px;
+  visibility: hidden;
+}
+
+.gameContainer {
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.gameOver {
+  font-family: "Great Vibes", cursive;
+  position: relative;
+  top: 63px;
+  font-size: 80px;
+  text-align: center;
+  color: #FFFF;
+  letter-spacing: 3px;
+}
+
+.replay {
+  position: relative;
+  top: 70px;
+  font-size: 43px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.replay a {
+  background-color: #7f7fff;
+    border: 2px solid #7f7fff;
+    border-radius: 50px;
+    color: white;
+    font-size: 25px;
+    padding: 15px 25px;
+    animation: flash;
+    animation-duration: 2s;
+}
+
+.replay a:hover {
+  /* background-color: transparent; */
+  /* color: #7f7fff; */
+  cursor: pointer;
+  box-shadow: 0 5px 7px #aebfff;
+}
+
+.replay a:focus {
+  outline: none;
+}
+
+.player {
+  background-image: url("./assets/jerry.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 205px;
+  /* height: 114px; */
+  height: 200px;
+  position: absolute;
+  bottom: 0px;
+  left: 52px;
+}
+
+.animatedPlayer {
+  animation: player 0.6s linear;
+}
+
+@keyframes player {
+  0% {
+    bottom: 0px;
+  }
+  25% {
+    bottom: 225px;
+  }
+  50% {
+    bottom: 375px;
+  }
+  75% {
+    bottom: 135px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+.obstacle {
+  background-image: url("./assets/tom_img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 220px;
+  position: absolute;
+  bottom: 0px;
+  /* left: 44vw; */
+  right: 120px;
+}
+.animatedObstacle {
+  animation: animatedObstacleMove 5s linear infinite;
+}
+
+@keyframes animatedObstacleMove {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -10vw;
+  }
+}
+
+.gameStartDiv {
+  height: 100%;
+  /* padding-top: 400px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.gameStart {
+  position: relative;
+  background-color: #7f7fff;
+  border: 2px solid #7f7fff;
+  border-radius: 25px;
+  color: white;
+  font-size: 25px;
+  padding: 10px 15px;
+  width: 180px;
+  height: 60px;
+  letter-spacing: 5px;
+}
+
+.gameStart:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 10px #aebfff;
+}
+
+.gameStartDiv #text {
+  font-family: "Great Vibes", cursive;
+  font-size: 100px;
+  position: relative;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 7px;
+}
